@@ -24,7 +24,7 @@ object UbwInt {
       num1Decoder.decode(num2)
     }
 
-    override def decode1(number2: Number2T): UbwInt = {
+    override def decode2(number2: Number2T): UbwInt = {
       val num1Decoder = implicitly[Number1Decoder[UbwInt]]
       val num2: Number1 = number2
       num1Decoder.decode(num2)
@@ -54,7 +54,6 @@ object UbwInt {
     }
 
     override def encode2(model: UbwInt): Number2T = {
-
       var count = model.n
       var num2:Number2T = Number2TBI
       while (count > 0) {

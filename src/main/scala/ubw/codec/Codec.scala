@@ -12,7 +12,7 @@ trait Number1Encoder[T] {
 
 trait Number2Decoder[T] {
   def decode1(number2: Number2S): T
-  def decode1(number2: Number2T): T
+  def decode2(number2: Number2T): T
 }
 
 trait Number2Encoder[T] {
